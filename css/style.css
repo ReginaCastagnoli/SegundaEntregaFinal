@@ -1,0 +1,198 @@
+/* MOBILE FIRST desde 375px*/
+
+/* COLORES:
+#463f3a (MARRON OSC)
+#8a817c (MARRON CLARO)
+#bcb8b1 (BEIGE OSC)
+#f4f3ee (BEIGE)
+#e0afa0 (SALMON)
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.fondoColor {
+    background-color: #bcb8b1b8;
+
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.header a {
+    color: #463f3a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header a:hover {
+    color: #f4f3ee;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.logo {
+    height: 100px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #bcb8b1;
+    min-height: 15vh;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    margin: 0px;
+}
+
+.footer ul li {
+    margin-top: 5px;
+}
+
+i {
+    color: #463f3a;
+    font-size: 2rem;
+    margin: 5px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+.contactanos {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.logo-footer {
+    height: 120px;
+}
+
+.grid-container {
+    display: grid;
+}
+
+h4 {
+    color: #463f3a;
+    text-decoration: underline;
+}
+
+/* TODOS LOS MAIN */
+main {
+    min-height: 100vh;
+    background-image: linear-gradient(184deg, #fdfcfb 0%, #bcb8b1 100%);
+}
+
+/* H1 */
+h1 {
+    color: #463f3a;
+    text-align: center;
+    padding: 7px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* SUBTITULOS */
+.h2 {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: #8a7e7c;
+    text-align: center;
+    margin: 40PX;
+    text-decoration: underline;
+}
+
+/* IMAGENES INDEX */
+.img-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.img-index img {
+    width: 170px;
+    padding: 5px;
+}
+
+/* PRESENTACION
+.quien-soy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentacion {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    margin: 10px;
+}
+
+.negrita {
+    font-weight: bold;
+} */
+
+/* MEDIA QUERYS */
+@media(min-width:768px) {
+
+    /* header */
+    .header a {
+        font-size: 20px;
+    }
+
+    .header a:hover {
+        font-size: 25px;
+    }
+
+    .logo {
+        height: 120px;
+    }
+
+    /* footer */
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*  img index */
+    .img-index {
+        justify-content: center;
+    }
+
+    .img-index img {
+        width: 270px;
+    }
+
+    .quien-soy {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+}
+
+
+@media(min-width:1024px) {
+
+    /* header */
+    .logo {
+        height: 150px;
+    }
+
+    .img-index img {
+        width: 400px;
+    }
+}
