@@ -255,6 +255,56 @@ strong a{
     box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
     font-weight: bold;
 }
+/* html contacto */
+.contacto{
+    font-size:20px;
+    text-align: center;
+    color: #463f3a;
+}
+h3 {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 10px;
+}
+.texto-contacto{
+    font-size: 15px;
+    color: #463f3a;
+}
+.imagen-redes {
+    display: flex;
+    justify-content: center;
+}
+
+input,
+textarea {
+    width: 90%;
+    margin: 10px;
+}
+
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.opcion {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #463f3a;
+}
+.opcion:hover{
+    font-size: 22px;
+    background-color: #8a7e7c;
+    color: white ;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* MEDIA QUERYS */
 @media(min-width:768px) {
 
@@ -314,6 +364,13 @@ strong a{
     .accordion-button-faq{
         font-size:23px;
     }
+    /* html contacto */
+    h3{
+        font-size:25px ;
+    }
+    .texto-contacto{
+        font-size: 18px;
+    }
 }
 
 
@@ -340,5 +397,22 @@ strong a{
     /* html galeria */
     .grid-container-galeria{
         max-width: 1300px;
+    }
+    /* html contacto */
+    .contacto{
+        font-size: 30px;
+    }
+    h3{
+        font-size:30px ;
+    }
+    .texto-contacto{
+        font-size: 20px;
+        margin: 5px;
+    }
+    .opcion{
+        font-size: 23px;
+    }
+    .opcion:hover{
+        font-size: 25px;
     }
 }
